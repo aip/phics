@@ -1,3 +1,126 @@
+# for root dir
+/0ntology/
+/1/
+/coadis/
+/data/
+/git/
+/.Trash*/
+# ignore any file inside a temp directory, anywhere in the source tree, 
+# but don't ignore the temp directories themselves
+#/temp/*
+# clean -n -d will remove because the 'temp' directory is not in .gitignore
+/temp/
+
+# for virtual environments
+venv
+
+# for databases
+*.sqlite
+
+# for translations
+*.mo
+
+# for htdocs
+#  The '**' construction is not supported
+/sites/www/htdocs/ontology/archive/*
+/sites/*/htdocs/stats/*
+/sites/*/htdocs/oldhouse/
+/sites/*/htdocs/files/*
+!/sites/*/htdocs/files/.htaccess
+!/sites/*/htdocs/files/index.php
+
+# for symbolic links
+/sites/*/htdocs/fckeditor
+/sites/*/htdocs/js/editor
+/sites/*/htdocs/pic/editor
+mysql.jar
+
+#for sites
+/sites/wadis-not-used/
+
+# for config
+secure/
+etc/
+password.py
+secure.py
+cron.conf
+kernel.conf
+site.conf
+News_saga.conf
+News_portal.conf
+
+#for IDE
+/.DS_Store
+/.settings/
+/.buildpath
+/.idea/
+/.project
+/.metadata
+*.iml
+*.ipr
+*.iws
+*.launch
+*.tmproj
+.mr.developer.cfg
+.pydevproject
+
+#for developers
+.coverage
+.tox
+nosetests.xml
+
+#for binary files
+*.db
+*.qz
+*.tar
+*.bz2
+*.pdf
+*.djvu
+*.zip
+*.7z
+*.rar
+
+#for library files
+*.so
+
+#for statistics files
+log/*
+logs/*
+*_exchange.txt
+*.log
+*_log
+*-log.txt
+
+#for temporary files
+*.bak
+*.backup
+*.old
+*~
+~*
+
+#for cache
+*.py[cod]
+*.egg
+*.egg-info
+.cache
+dist
+build
+eggs
+parts
+bin
+var
+sdist
+develop-eggs
+.installed.cfg
+lib
+lib64
+__pycache__
+
+#for upload files
+/module/Saga/db/dbg/system/*.txt
+/module/Saga/db/dbg/system/*/*.txt
+
+#for extjs
 .architect
 bootstrap.css
 bootstrap.js
@@ -12,3 +135,4 @@ modern.jsonp
 resources/sass/.sass-cache/
 resources/.arch-internal-preview.css
 .arch-internal-preview.css
+
